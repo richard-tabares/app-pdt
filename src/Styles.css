@@ -12,14 +12,38 @@
     
 }
 
+.sideBar{
+    @apply bg-white h-screen sticky top-0;
+}
 .sideBarItem {
     @apply text-icons px-3 py-3 rounded-lg cursor-pointer hover:bg-menu-hover;
 }
 .topMenu {
 
-    @apply bg-primary-bg place-content-center justify-items-end p-4 text-icons;
+    @apply bg-primary-bg place-content-center justify-items-end py-4 px-6 text-icons sticky top-0 opacity-90 backdrop-blur-xl;
 
 }
-.dashboard{
-    @apply col-start-2 bg-primary-bg;
+.tracking, .charts{
+    @apply col-start-2 bg-primary-bg p-10;
+}
+.titles{
+    @apply text-titles font-bold text-2xl mb-10;
+}
+.subtitles{
+    @apply text-titles font-medium text-lg mb-6;
+}
+.inputTitles{
+    @apply text-titles font-medium text-sm mb-2 block;
+}
+.inputText{
+    @apply bg-white border-y border-r border-placeholder rounded-e-lg pl-3 text-icons text-sm w-full;
+}
+.inputIcon{
+    @apply border border-placeholder rounded-s-lg p-4 bg-menu-hover text-icons;
+}
+.btnReset{
+    @apply  text-icons border border-placeholder rounded-md px-6 py-2 text-sm cursor-pointer;
+}
+.btnSave{
+    @apply bg-titles text-primary-bg border-placeholder rounded-md px-6 py-2 text-sm cursor-pointer hover:bg-icons;
 }

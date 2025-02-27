@@ -1,6 +1,7 @@
-import { Routes, Route } from 'react-router';
+import { Routes, Route, Navigate } from 'react-router';
 import { NavBar } from '../ui/NavBar';
-import { Dashboard } from '../pdt/pages/Dashboard';
+import { Tracking } from '../pdt/pages/Tracking';
+import { Charts } from '../pdt/pages/Charts';
 export const AppRouter = () => {
     return (
 
@@ -9,9 +10,11 @@ export const AppRouter = () => {
             <NavBar />
 
             <Routes>
-                <Route path="/" element={<Dashboard />} />
+                <Route path='/analiticas' element={<Charts />} />
+                <Route path='/seguimiento' element={<Tracking />} />
+                <Route path='/*' element={<Navigate to='/analiticas' />} />
             </Routes>
-            
+
         </section>
 
     )
