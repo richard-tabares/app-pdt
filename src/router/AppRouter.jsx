@@ -4,13 +4,13 @@ import { Dashboard } from '../pdt/pages/Dashboard';
 export const AppRouter = () => {
     return (
 
-        <section className='h-screen grid grid-cols-[16rem_1fr] grid-rows-[4rem_1fr]'>
+        <section className='h-screen grid grid-cols-[16rem_1fr] grid-rows-[4.5rem_1fr]'>
 
-            {/* <NavBar />
+            <NavBar />
 
             <Routes>
                 <Route path="/" element={<Dashboard />} />
-            </Routes> */}
+            </Routes>
             
         </section>
 

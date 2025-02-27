@@ -1,4 +1,4 @@
-import { FaChartPie } from "react-icons/fa6";
+import { FaChartPie, FaFileCirclePlus, FaUser, FaGear, FaAngleDown } from "react-icons/fa6";
 export const NavBar = () => {
   return (
 
@@ -22,7 +22,7 @@ export const NavBar = () => {
             </li>
             <li className="sideBarItem">
               <a href="#" className="flex items-center">
-                <i><FaChartPie className="mr-4 size-5" /></i><span className="">Alimentar</span>
+                <i><FaFileCirclePlus className="mr-4 size-5" /></i><span className="">Ingresar Información</span>
               </a>
             </li>
 
@@ -36,7 +36,13 @@ export const NavBar = () => {
       </nav>
 
       {/* NavaBar */}
-      <nav className="bg-primary-bg">
+      <nav className="topMenu">
+
+        <section className="flex items-center">
+          <i><FaUser className="mr-2" /></i>
+          <span className="font-medium hover:text-titles cursor-pointer">Inicia Sesión<FaAngleDown className="ml-2 hover:text-titles cursor-pointer inline"/></span>
+          <i><FaGear className="ml-10 hover:text-titles cursor-pointer"/></i>
+        </section>
 
 
       </nav>

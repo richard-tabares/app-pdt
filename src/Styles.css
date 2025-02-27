@@ -15,6 +15,11 @@
 .sideBarItem {
     @apply text-icons px-3 py-3 rounded-lg cursor-pointer hover:bg-menu-hover;
 }
+.topMenu {
+
+    @apply bg-primary-bg place-content-center justify-items-end p-4 text-icons;
+
+}
 .dashboard{
     @apply col-start-2 bg-primary-bg;
 }
