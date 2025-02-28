@@ -1,9 +1,4 @@
 [[redirects]]
-  from = "/"
-  to = "/analiticas"
-  status = 200
-
-[[redirects]]
-  from = "/"
-  to = "/seguimiento"
+  from = "/*"
+  to = "/index.html"
   status = 200

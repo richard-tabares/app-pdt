@@ -6,10 +6,8 @@ import './Styles.css'
 
 createRoot(document.getElementById('root')).render(
   // <StrictMode>
-  //</HashRouter>
-  <HashRouter>
+  <BrowserRouter>
     <AppRouter />
-  </HashRouter>
-  // </BrowserRouter>
+  </BrowserRouter>
   // </StrictMode>
 )
